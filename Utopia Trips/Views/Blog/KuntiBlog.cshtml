@@ -1,0 +1,128 @@
+﻿
+@{
+    ViewBag.Title = "KuntiBlog | Utopiatrips";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+@section metatags
+{
+    <meta name="keywords" content="kunti betta,night trek,trekking in bangalore,bangalore night,skandagiri day trek,weekend treks near bangalore,night trekking places in bangalore,night trekking around bangalore,trekking places in and around bangalore,kunti betta night trek,day trekking in bangalore" />
+    <meta name="description" content="Kunti Betta Night Trek is one of the best night trekking destinations around Bangalore. Kunti Betta night trek is the best escapade for the urban folks." />
+}
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="../Content/CustomImg/alltripbanner.jpg" data-natural-width="1200" data-natural-height="430">
+    <div class="parallax-content-1">
+        <div class="animated fadeInDown">
+            <h1>KuntiBetta Blog</h1>
+            <p>Take only memories.......Leave only footprints</p>
+        </div>
+    </div>
+</section>
+
+<main>
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Blog", "Blog")">Stories</a>
+                </li>
+                <li>Kunti Betta</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End position -->
+    <div class="container margin_60">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="box_style_1">
+                    <div class="post nopadding">
+                        <img src="../Content/kunti/13.jpg" alt="Image" class="img-responsive">
+                        <div class="post_info clearfix">
+                            <div class="post-left">
+                                <ul>
+                                    <li>
+                                        <i class="icon-calendar-empty"></i>On <span>12 Nov 2017</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-inbox-alt"></i>In <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">Top tours</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-tags"></i>Tags
+                                        <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">Trekking</a>
+                                        <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">Outdoor</a>
+                                        <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">Outdoor Around Banglore</a>
+                                        <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">Weekend</a>
+                                        <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">Night Trek</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>Kunti Betta </h2>
+                        <p>
+                            I am a person who does his groundwork in knowing the place before I get there. So I did research about Kuntibetta, and I learnt quite a few interesting things!
+                            <br/><br />
+                            Kuntibetta is basically a twin hill located in Pandavapura, Mandya district and is around 120 kilometres away from Bangalore. It is surrounded by sugarcane fields as well as paddy fields. History has it that the Kunti, the mother of Pandavas had resided here during their banishment. There's also a temple at the foot of the hill which attracts devotees, I don't remember what temple it was though.
+                            <br /><br />
+                            Anyway, getting back to the trek that was organized, the best part about it was that it was a night trek! When we started ascending the trek, I wasn't sure what I was in for. Trekking after a long while was already exciting for me. The leaders from the organizing team knew their way around the hill, and we began at around 3am. We had to go up and down the first hill, then again ascend the second one to reach the top of Kuntibetta. There were also couple of caves on our way where we could lay back and rest for a while.
+                            <br /><br />
+                            When we reached on the top, we saw a bonfire place which was probably made by some Good Samaritans when on their trek. The bonfire was lit, and it wasn't very long before I looked up to the stars and found solace, peace and contentment amid my hectic life. Kuntibetta has remained one of the best treks of my life. What more! The sunrise that we stayed up to witness just mesmerized me to such an extent that I still have the sight etched in my memories!
+                            <br /><br />
+                            On our way back, at the base of the hill, we came across some freshly picked tender coconuts which were unbelievably sweet and cold! That was a cherry on the cake!
+                            <br /><br />
+                            All in all, the trek opened me up to a greater perspective of life. I learnt that regardless of how many things you have to complain about in life, there are always things in life that you can admire! And this particular trek made me think in this line!
+                        </p>
+                        
+                    </div>
+                    <!-- end post -->
+                </div>
+                <!-- end box_style_1 -->
+
+                <div id="comments">
+
+                </div>
+                <!-- End Comments -->
+
+            </div>
+            <!-- End col-md-8-->
+            <aside class="col-md-3 add_bottom_30">
+                <div class="widget">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" style="margin-left:0;"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- End Search -->
+                <hr>
+                <div class="widget" id="cat_blog">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">Places to visit</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">Top treks</a>
+                        </li>
+                        @*<li>
+                <a href="#">Tips for travellers</a>
+            </li>*@
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">Handpicked</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End widget -->
+                <hr>
+            </aside>
+            <!-- End aside -->
+        </div>
+        <!-- End row-->
+    </div>
+    <!-- End container -->
+</main>
+<!-- End main -->

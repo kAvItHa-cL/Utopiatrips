@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "GiftCards | Utopiatrips";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section metatags
+{
+    <meta name="keywords" content="utopiatrips giftcards" />
+    <meta name="description" content="Book the best one day treks, two day treks and night treks with Utopia Trips gift cards! Book through the Utopia Trips gift cards and get the best deals. " />
+}
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="../Content/CustomImg/gfc.jpg" data-natural-width="1200" data-natural-height="430">
+    <div class="parallax-content-1">
+        <div class="animated fadeInDown">
+            <h1>Gift cards</h1>
+            <p>Instant Happiness </p>
+        </div>
+    </div>
+</section>
+
+
+<main>
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                
+                <li>Gift Cards</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Position -->
+    <div class="container margin_60">
+
+        <div class="row">
+            <div class="col-md-6 col-sm-6 hidden-xs">
+                <img src="~/content/img/giftcard.jpg" alt="Laptop" class="img-responsive laptop">
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <h3><span>Get started</span> with Utopiatrips</h3>
+                <ul class="list_order">
+                    <li><span>1</span>Select your preferred tours</li>
+                    <li><span>2</span>Purchase tickets and options</li>
+                    <li><span>3</span>Enter the code given on the back of the giftcard</li>
+                </ul>
+                <a href="@Url.Action("Index", "Home")" class="btn_1">Start Exploring</a>
+            </div>
+        </div>
+        <!-- End row -->
+        <hr>
+        <div class="main_title">
+            <h2>Some <span>good </span>reasons</h2>
+            <p></p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="feature">
+                    <i class="icon_set_1_icon-30"></i>
+                    <h3><span>+ 1000</span> Happy Customers</h3>
+                    <p>
+                        We have existed in this line for quite a while now! We have got over a thousand happy customers who have cherished their trek experiences with us, and have also put up some heartwarming reviews about them! We still continue to organize treks with the same zeal!                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.2s">
+                <div class="feature">
+                    <i class="icon_set_1_icon-41"></i>
+                    <h3><span>Corporate</span> Friendly</h3>
+                    <p>
+                        Our treks and events are particularly corporate friendly. We understand the magnitude of work you do, and we also realize that you'd need a relieving experience on your tours. We organize treks for corporate teams and professionals with customized offerings and great discounts!                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End row -->
+        <div class="row">
+            <div class="col-md-6 wow fadeIn row3" data-wow-delay="0.3s" style="margin-left:25%;">
+                <div class="feature">
+                    <i class="icon_set_1_icon-57"></i>
+                    <h3><span>Handpicked</span> destinations</h3>
+                    <p>
+                        We don't just organize treks to places where most people are already going. Our speciality lies in the fact that we explore a few destinations by ourselves and make sure that they will be a great experience for you. We do have a few uncharted trek destinations that are splendid!                    </p>
+                </div>
+            </div>
+            </div>
+        <hr>
+    </div>
+</main>
+<!-- End main -->

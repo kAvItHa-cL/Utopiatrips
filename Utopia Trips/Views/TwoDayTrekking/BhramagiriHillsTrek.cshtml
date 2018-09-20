@@ -1,0 +1,488 @@
+﻿
+@{
+    ViewBag.Title = "Brahmagiri Trek | Utopiatrips";
+    Layout = "~/Views/Shared/_lowerpage.cshtml";
+}
+
+@section metatags
+{
+    <meta name="keywords" content="brahmagiri trekking,brahmagiri trek" />
+    <meta name="description" content="Brahmagiri trekking is the favourite weekend get-away trekking destination. Brahmagiri trek has full of surprises with its never ending rocks!" />
+}
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="https://res.cloudinary.com/dbwdz71fb/image/upload/v1522313742/Utopia/BannerImages/brahmagiribanner.jpg" data-natural-width="1400" data-natural-height="470">
+    <div class="parallax-content-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <h1>Brahmagiri Trek</h1>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div id="price_single_main">
+                        per person <span class=" icon-rupee">3699</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End section -->
+<main>
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Two Day Trek</a>
+                </li>
+                <li>Brahmagiri Trek</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Position -->
+    <div class="collapse" id="collapseMap">
+        <div id="map" class="map"></div>
+    </div>
+    <div class="container margin_60">
+        <div class="row">
+            <div class="col-md-8" id="single_tour_desc">
+                <div id="single_tour_feat">
+                    <ul>
+                        <li><i class="icon_set_1_icon-37"></i>Mountain</li>
+                        <li><i class="icon_set_1_icon-83"></i>1 Hours</li>
+                        <li><i class="icon_set_1_icon-30"></i>Moderate</li>
+                        <li><i class="icon_set_1_icon-82"></i>100+ Likes</li>
+                        <li><i class="icon_set_1_icon-27"></i>Transportation</li>
+                        <li><i class="icon_set_1_icon-58"></i>Breakfast</li>
+                        <li><i class="icon_set_1_icon-29"></i>Tour guide</li>
+                    </ul>
+                </div>
+                <p class="visible-sm visible-xs">
+                    <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
+                </p>
+                <p class="visible-sm visible-xs">
+                    <a href=" https://www.youtube.com/watch?v=kfw8xycNSak" class="video btn_full">glimpses of picture Perfect</a>
+                </p>
+                <!-- Map button for tablets/mobiles -->
+                <div id="Img_carousel" class="slider-pro">
+                    <div class="sp-slides">
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="~/Content/css/images/blank.gif" data-src="../Content/brahmagiri/brahmagiri10.jpg" data-small="../Content/brahmagiri/brahmagiri10.jpg" data-medium="../Content/brahmagiri/brahmagiri10.jpg" data-large="../Content/brahmagiri/brahmagiri10.jpg" data-retina="../Content/brahmagiri/brahmagiri10.jpg">
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="~/Content/css/images/blank.gif" data-src="../Content/brahmagiri/brahmagiri11.jpg" data-small="../Content/brahmagiri/brahmagiri11.jpg" data-medium="../Content/brahmagiri/brahmagiri11.jpg" data-large="../Content/brahmagiri/brahmagiri11.jpg" data-retina="../Content/brahmagiri/brahmagiri11.jpg">
+                            <!--	<h3 class="sp-layer sp-black sp-padding" data-horizontal="40" data-vertical="40" data-show-transition="left">
+                Lorem ipsum dolor sit amet </h3>
+                        <p class="sp-layer sp-white sp-padding" data-horizontal="40" data-vertical="100" data-show-transition="left" data-show-delay="200">
+                            consectetur adipisicing elit
+                        </p>
+                        <p class="sp-layer sp-black sp-padding" data-horizontal="40" data-vertical="160" data-width="350" data-show-transition="left" data-show-delay="400">
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content/brahmagiri/brahmagiri12.jpg" data-small="../Content/brahmagiri/brahmagiri12.jpg" data-medium="../Content/brahmagiri/brahmagiri12.jpg" data-large="../Content/brahmagiri/brahmagiri12.jpg" data-retina="../Content/brahmagiri/brahmagiri12.jpg">
+                            <!--	<p class="sp-layer sp-white sp-padding" data-position="centerCenter" data-vertical="-50" data-show-transition="right" data-show-delay="500">
+                    Lorem ipsum dolor sit amet
+                </p>
+                <p class="sp-layer sp-black sp-padding" data-position="centerCenter" data-vertical="50" data-show-transition="left" data-show-delay="700">
+                    consectetur adipisicing elit
+                </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content/brahmagiri/brahmagiri13.jpg" data-small="../Content/brahmagiri/brahmagiri13.jpg" data-medium="../Content/brahmagiri/brahmagiri13.jpg" data-large="../Content/brahmagiri/brahmagiri13.jpg" data-retina="../Content/brahmagiri/brahmagiri13.jpg">
+                            <!--<p class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-vertical="0" data-width="100%" data-show-transition="up">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content/brahmagiri/brahmagiri14.jpg" data-small="../Content/brahmagiri/brahmagiri14.jpg" data-medium="../Content/brahmagiri/brahmagiri14.jpg" data-large="../Content/brahmagiri/brahmagiri14.jpg" data-retina="../Content/brahmagiri/brahmagiri14.jpg">
+                            <!--<p class="sp-layer sp-white sp-padding" data-vertical="5%" data-horizontal="5%" data-width="90%" data-show-transition="down" data-show-delay="400">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content//brahmagiri/brahmagiri15.jpg" data-small="../Content/brahmagiri/brahmagiri15.jpg" data-medium="../Content/brahmagiri/brahmagiri15.jpg" data-large="../Content/brahmagiri/brahmagiri15.jpg" data-retina="../Content/brahmagiri/brahmagiri15.jpg">
+                            <!--<p class="sp-layer sp-white sp-padding" data-horizontal="10" data-vertical="10" data-width="300">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content/brahmagiri/brahmagiri16.jpg" data-small="../Content/brahmagiri/brahmagiri16.jpg" data-medium="../Content/brahmagiri/brahmagiri16.jpg" data-large="../Content/brahmagiri/brahmagiri16.jpg" data-retina="../Content/brahmagiri/brahmagiri16.jpg">
+                            <!--<p class="sp-layer sp-black sp-padding" data-position="bottomLeft" data-horizontal="5%" data-vertical="5%" data-width="90%" data-show-transition="up" data-show-delay="400">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content//brahmagiri/brahmagiri17.jpg" data-small="../Content/brahmagiri/brahmagiri17.jpg" data-medium="../Content/brahmagiri/brahmagiri17.jpg" data-large="../Content/brahmagiri/brahmagiri17.jpg" data-retina="../Content/brahmagiri/brahmagiri17.jpg">
+                            <!--	<p class="sp-layer sp-black sp-padding" data-horizontal="50" data-vertical="50" data-show-transition="down" data-show-delay="500">
+                    Lorem ipsum dolor sit amet
+                </p>
+                <p class="sp-layer sp-white sp-padding" data-horizontal="50" data-vertical="100" data-show-transition="up" data-show-delay="500">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content//brahmagiri/brahmagiri18.jpg" data-small="../Content/brahmagiri/brahmagiri18.jpg" data-medium="../Content/brahmagiri/brahmagiri18.jpg" data-large="../Content/brahmagiri/brahmagiri18.jpg" data-retina="../Content/brahmagiri/brahmagiri18.jpg">
+                            <!--	<p class="sp-layer sp-black sp-padding" data-horizontal="50" data-vertical="50" data-show-transition="down" data-show-delay="500">
+                    Lorem ipsum dolor sit amet
+                </p>
+                <p class="sp-layer sp-white sp-padding" data-horizontal="50" data-vertical="100" data-show-transition="up" data-show-delay="500">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>-->
+                        </div>
+                        <div class="sp-slide">
+                            <img alt="Brahmagiri Trek" class="sp-image" src="../Content/css/images/blank.gif" data-src="../Content//brahmagiri/brahmagiri19.jpg" data-small="../Content/brahmagiri/brahmagiri19.jpg" data-medium="../Content/brahmagiri/brahmagiri19.jpg" data-large="../Content/brahmagiri/brahmagiri19jpg" data-retina="../Content/brahmagiri/brahmagiri19.jpg">
+                            <!--	<p class="sp-layer sp-black sp-padding" data-horizontal="50" data-vertical="50" data-show-transition="down" data-show-delay="500">
+                    Lorem ipsum dolor sit amet
+                </p>
+                <p class="sp-layer sp-white sp-padding" data-horizontal="50" data-vertical="100" data-show-transition="up" data-show-delay="500">
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>-->
+                        </div>
+                    </div>
+                    <div class="sp-thumbnails">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri10.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri11.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri12.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri13.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri14.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri15.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri16.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri17.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri18.jpg">
+                        <img alt="Brahmagiri Trek" class="sp-thumbnail" src="~/Content/brahmagiri/tn-brahmagiri19.jpg">
+
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Description</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <h4>Brahmagiri Hills Trek(Two Day Outing)</h4>
+                        <p>
+                            Do you have a crazy gang that loves adventures? Well, then set on a journey to the pristine hills of Brahmagiri for your next outing. You shall be promised with the truest thrills of adventure that's unmatched! This beautiful place in Coorg, the Kashmir of the South, calls out ardent explorers while seeing to it that they are stunned by it. How does a warm campfire on a chilly altitude appeal to you? Specially when you have friends around talking their little exciting stories from life?
+                            Oh! Did we mention the place has also got picture perfect landscapes that could be your next Facebook cover?
+                        </p>
+                        <h4>What's include</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <ul class="list_ok">
+                                    <li>Transportation (from/to Bangalore)</li>
+                                    <li>Nagarhole Safari</li>
+                                    <li>Guide Charges</li>
+                                    <li>Campfire (Depends on the Weather)</li>
+                                    <li>Trek</li>
+                                    <li>2 Breakfast</li>
+                                    <li>1 Lunch</li>
+                                    <li>Vegetarian Dinner</li>
+                                    <li>Accomodation/Homestay</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>Exclusion</h4>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <ul class="list_ok">
+                                    <li>Snacks</li>
+                                    <li>Water Bottle</li>
+                                    <li>Anything not mentioned in Inclusions</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- End row  -->
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3>Schedule</h3>
+                    </div>
+                    <div class="col-md-9">
+                        <div class=" table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">
+                                            You Should Know
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            Day 0
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            10:00 PM Pickup starts from Bangalore
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            Day 1
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            5:30 AM Reach Homestay
+                                        <td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            8:00 AM Have Brekafast and carry packed Lunch
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            09:00 AM Start the Trek
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1:30 PM Reach Peak and have packed lunch
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2:30 PM Descend from the peak
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            06:00 PM Reach Home Stay and have Tea
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            8:00 PM Enjoy Campfire (if weather permits)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            09:00 PM Have Dinner retire for the day
+                                        </td>
+                                    </tr>
+                                    <tr><th>Day 2</th></tr>
+                                    <tr>
+                                        <td>
+                                            7:00 AM Wake Up and get Ready
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            8:30 AM Have Breakfast
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            9:30 AM Checkout from Homestay and Depart for Nagarhole safari
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            12:00 PM Start back to Bangalore
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1:00 PM Have self sponsored lunch on the way Back
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            7:00 PM Reach Back to Bangalore.(Depends on the traffic)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class=" table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">
+                                            You Should Carry
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Torch per person
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Sports shoes or trekking shoes in good condition
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Backpack
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Rain coat/Poncho
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Water bottles
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Energy bars, dry fruits, etc.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Personal medication
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Sweater/ jackets for the night
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Toiletries (napkin, tissues, etc.)
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Flashlight/Torch with extra batteries
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            Track pants and cotton T-shirt
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End  single_tour_desc-->
+            <aside class="col-md-4">
+                <p class="hidden-sm hidden-xs">
+                    <a class="btn_map" data-toggle="collapse" href="#collapseMap" aria-expanded="false" aria-controls="collapseMap" data-text-swap="Hide map" data-text-original="View on map">View on map</a>
+                </p>
+                <p class="hidden-sm hidden-xs">
+                    <a href=" https://www.youtube.com/watch?v=kfw8xycNSak" class="video btn_full">glimpses of picture Perfect</a>
+                </p>
+                <div class="box_style_1 expose">
+                    @Html.BeginForm("Payment", "Payment", FormMethod.Post)
+                    {
+                    <h3 class="inner">- Booking -</h3>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>First name</label>
+                                <input class="form-control required" name="FirstName" id="name_booking" type="text">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Last name</label>
+                                <input class="form-control required" name="LastName" id="last_name_booking" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input class="form-control required" type="email" name="Email" id="email_booking">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input class="form-control required" type="number" name="Phone" id="phone_booking">
+                    </div>
+                    <div class="form-group">
+                        <label hidden>Trek Type</label>
+                        <input type="hidden" value="Two-Day trek" id="trek_type" class="form-control" name="TrekType">
+                        <!-- <select class="form-control" name="TrekType" id="trek_type">
+            <option selected hidden>Select</option>
+            <option value="Day Trek" selected>Two Day Trek</option>
+            <option value="Night Trek">Night Trek</option>
+                           </select>-->
+                    </div>
+                    <div class="form-group">
+                        <label>Gift Code</label>
+                        <input class="form-control required" type="text" name="GiftCode" id="gift_code">
+                        <p> <small style="color:green;">*Use code UTROAM100 to get instant Rs.100 cashback</small></p>
+
+
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label><i class="icon-calendar-7"></i> Select a date</label>
+                                <input class="date-pick form-control required" type="text" name="TripDate" id="date_booking">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label>Tickets</label>
+                                <div class="numbers-row">
+                                    <div class="dec button_inc">-</div>
+                                    <input type="text" value="1" id="adults" class="qty2 form-control" name="Tickets">
+                                    <div class="inc button_inc">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" value="3699" id="amount" class="qty2 form-control" name="Amount">
+                    <input type="hidden" value="Bhramagiri Hills Trek" id="trek" class="qty2 form-control" name="Description">
+                    <p>
+                        <small>* Prices for person.</small>
+                    </p>
+                    <button type="submit" class="btn_full">Book now</button>
+                    <div class="form-group">
+                        <label style="color:forestgreen;display:none;" id="processInput">Please wait.....</label>
+                    </div>
+                    <div class="form-group">
+                        <label style="color:red;display:none;" id="invalidInput">Invalid inputs, Please try again!</label>
+                    </div>
+                    @if (ViewBag.PaymentError != null)
+        {
+            <div class="form-group">
+                <label style="color:red;">@ViewBag.LoginError</label>
+            </div>
+}
+                </div>
+                <!--/box_style_1 -->
+
+                <div class="box_style_4">
+                    <i class="icon_set_1_icon-90"></i>
+                    <h4><span>Book</span> by phone</h4>
+                    <a href="tel://91 8197993224" class="phone">+91 8197993224</a>
+                    <small>Monday to Friday 9.00am - 7.30pm</small>
+                </div>
+            </aside>
+        </div>
+        <!--End row -->
+    </div>
+    <!--End container -->
+
+    <div id="overlay"></div>
+    <!-- Mask on input focus -->
+
+</main>
+<!-- End main -->
+<script src="~/Content/js/map_js/brahmagiri_map.js"></script>

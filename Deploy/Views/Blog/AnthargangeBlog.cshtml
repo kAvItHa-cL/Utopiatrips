@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "AntargangeBlog";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="../Content/CustomImg/alltripbanner.jpg" data-natural-width="1200" data-natural-height="430">
+    <div class="parallax-content-1">
+        <div class="animated fadeInDown">
+            <h1>Anthargange Blog</h1>
+            <p>Take only memories.......Leave only footprints</p>
+        </div>
+    </div>
+</section>
+<main>
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("AntharagangeBlog", "Blog")">Stories</a>
+                </li>
+                <li>Page active</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End position -->
+    <div class="container margin_60">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="box_style_1">
+                    <div class="post nopadding">
+                        <img src="../Content/anthargange/13.jpg" alt="Image" class="img-responsive">
+                        <div class="post_info clearfix">
+                            <div class="post-left">
+                                <ul>
+                                    <li>
+                                        <i class="icon-calendar-empty"></i>On <span>12 Nov 2017</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-inbox-alt"></i>In <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")" >Top tours</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-tags"></i>Tags 
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Trekking</a> 
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Outdoor</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Outdoor Around Banglore</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Weekend</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Night Trek</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2>Antargange Night trek</h2>
+                        <p><br />
+                            We were all pretty excited about the trek and by evening, we were all ready with our Trek wear and shoes. Soon we boarded the vehicle arranged by trip organizers and the sight of sun set with it's orange blend falling over the roads of Bangalore roads filled our eyes and minds!
+                            
+                            <br/><br />
+                            After stopping over a hotel to have the coffee break, we finally reached the Antaragange Caves. We had to take steps to reach the temple which beholds a mysterious lake! The boards on either sides were filled with the rare species that were found in this cave region. The weather was just tailor made for trekking - Little windy and slightly cloudy. Trekking amidst green bushes and small twigs was the most amazing part. In no time, our shoes got dirty with dust and we all knew that this day was going to be one heck of an adventurous experience! We tightened the shoe laces and we couldn't wait to get more of it.
+                            
+                            <br /><br />
+                            Luckily, our organizers had roamed around this place so much they had become our local tourist guides and we entered many small, medium, big, narrow, scary and not-so-scary caves. Some caves were really dark with steep edges and I couldn't imagine myself slipping away at these slopes. In a huge amalgamation of many caves is a cave that's got the most steep edges and if you're an adventure enthusiast, you'll totally do anything to experience this! It was like a challenge that we faced or an exam that we passed! The small scratches on my hand which happened while I was sliding around the rocks made me feel all the more victorious! I could imagine receiving a virtual trophy amidst these dark caves! My mind had taken snapshots of these irregular, narrow, steep, tricky and dark caves and my friend captured our moments with his camera! I could bet that the pictures on my mind had better resolution than the camera ones! (Well... I at least thought so at that instance!)
+                            <br /><br />
+                            The guide next took us to one of the 'coolest' (In its literal sense) caves in the lot just a little far away from the big monolithic rock. The water in this cave was easily the best and purest water I've ever tasted! The monolithic rock here is the last destination and we all lied down for sometime spending some lone time and contemplating how beautiful nature is! The way back, undoubtedly became extremely easy as all our minds was captivated by the amazing adventure we had just experienced!
+
+                        </p>
+                       
+                    </div>
+                    <!-- end post -->
+                </div>
+                <!-- end box_style_1 -->
+                
+                <div id="comments">
+                    
+                </div>
+                <!-- End Comments -->
+                
+            </div>
+            <!-- End col-md-8-->
+            <aside class="col-md-3 add_bottom_30">
+                <div class="widget" id="cat_blog">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">Places to visit</a>
+                        </li>
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">Top tours</a>
+                        </li>
+                        @*<li>
+                            <a href="#">Tips for travellers</a>
+                        </li>*@
+                        <li>
+                            <a href="@Url.Action("Index", "Home")">Events</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End widget -->
+                <hr>
+                </aside>
+            <!-- End aside -->
+        </div>
+        <!-- End row-->
+    </div>
+    <!-- End container -->
+</main>
+<!-- End main -->

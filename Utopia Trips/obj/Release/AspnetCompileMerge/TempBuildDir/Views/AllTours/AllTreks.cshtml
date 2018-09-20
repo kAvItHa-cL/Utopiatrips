@@ -1,0 +1,474 @@
+﻿
+@{
+    ViewBag.Title = "AllTreks | Treks in Karnataka | Utopiatrips";
+    }
+
+@section metatags
+{
+    <meta name="keywords" content="one day trip,places to visit in bangalore,places to visit near bangalore,places near bangalore,one day trip from bangalore,places to visit near bangalore within 100 kms,places to visit in bangalore in one day,places to visit in bangalore for couples,2 days trip from bangalore,places near bangalore for weekend,trekking places" />
+    <meta name="description" value="Book the best places to visit in Bangalore for one day and explore the best trekking places to visit in Bangalore with Utopia Trips."/>
+}
+
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="../Content/Header/alltrips.jpg" data-natural-width="1200" data-natural-height="430">
+    <div class="parallax-content-1">
+        <div class="animated fadeInDown">
+            <h1>All Treks</h1>
+            <p></p>
+        </div>
+    </div>
+</section>
+<main>
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+
+                <li>All Treks</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container margin_60">
+        <div class="main_title" id="tours">
+            <h2>Top <span>One Day</span> Trek</h2>
+            <p>Breathtaking scenery and fresh mountain air await</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.1s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/anthargangebanner.png" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Moderate<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Antharagange</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("AntharagangeTrek", "OneDayTrekking")" data-title="Antharagange Trek" data-image="~/Content/homeimg/anthargangebanner.png" data-price="1099" data-description="Antharagange is a famous hill spot near bangalore, Known for caves. The parking lot in the map above serves as the trek starting point as well. It is safe to park your vehicle there overnight. The trek starts with steps to the Anthargange pool/ temple also called as Sri Kashi Vishweshwara temple." id="Antharagange">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("SavandurgaTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/savandurga.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Savandurga</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("SavandurgaTrek", "OneDayTrekking")" data-title="Savandurga Trek" data-image="~/Content/homeimg/savandurga.png" data-price="1099" data-description="Savandurga is in Karnataka state and 50 Km from Bangalore city. Convenient to go from Bangalore" id="Antaragange">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("HariHaraTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/hari.png" width="800" height="533" class="img-responsive" alt="image">
+                            <!--<div class="badge_save">Save<strong>30%</strong></div>-->
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Moderate<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Hari Hara</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("HariHaraTrek", "OneDayTrekking")" data-title="Hari Hara Trek" data-image="~/Content/homeimg/hari.png" data-price="1099" data-description="Hari hara betta is a doublet hill, located near Chikaballapur village, about 75 kms from Bangalore. As fascinating the name is, the 2 joined peaks derive their names from the Pandavas and Kauravas. Its grassy hilltop rises 250 meters high and a flight of several sandy steps lead to the top. Partly midway, resides Lord Shiva in a holy shrine amongst the lustrous greenery." id="Hari">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("KabbalDurgaTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/kabbal.png" width="800" height="533" class="img-responsive" alt="image">
+                            <!-- <div class="badge_save">Save<strong>20%</strong></div> -->
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Kabbal Durga</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("KabbalDurgaTrek", "OneDayTrekking")" data-title="Kabbal Durga Trek" data-image="~/Content/homeimg/kabbal.png" data-price="1099" data-description="Kabbal Durga is a village,which has a temple and fort.It lies about 80 Km from Bengaluru, the state capital of Karnataka. The name of the site is a combination of the words Kabbalamma,who is the presiding deity of the temple and Durga, which means fort in the Hindi language. This night trek to Kabbal Durga will take you a top an approximately 250 metre high hillock,where the two sites are located" id="Kabbal">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.5s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/kunti.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Easy<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Kunti Betta</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("KuntiBettaTrek", "OneDayTrekking")" data-title="Kunti Betta Trek" data-image="~/Content/homeimg/kunti.png" data-price="1099" data-description="Kunti Betta is a picturesque hill in the quaint town of Padavapura,marked by the two hills at an elevation of 2882m,the kunti betta is a must do an trekkers itinerary.This 3 hour trek is ideal for both domestic and international trekkers;nature lovers,thrill seeking couples and backpackers will enjoy this adventure." id="kunti">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("MaklidurgaTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/maklidurga.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Maklidurga</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("MaklidurgaTrek", "OneDayTrekking")" data-title="Maklidurga Trek" data-image="~/Content/homeimg/maklidurga.png" data-price="1099" data-description="Makali Durga trek is the nearest railway trek to Bangalore.It Begins with a 2km walk on the railway track from the station of MakaliDurga. One can also ride bikes to the beginning of the trekking trail as well. A lot of refreshments is advised to be carried in case one wants to trek this hillock" id="Makali">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("RamadevaraBettaTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/ramadevarabetta.png" width="800" height="533" class="img-responsive" alt="image">
+                            <!-- <div class="badge_save">Save<strong>20%</strong></div> -->
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Ramadevara Betta</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("RamadevaraBettaTrek", "OneDayTrekking")" data-title="Ramadevara Betta Trek" data-image="~/Content/homeimg/ramadevarabetta.png" data-price="1099" data-description="Ramadevara Betta, 747 mts high and more famously referred to as Sholay Gudda, is a hill 5kms from the town whose belt of rocks extends for 50 kms in the N-S direction. Ramanagar enjoys international recognition as a rock climbing site, and Sholay Gudda or Ramadevara Betta ranks among the top 5 rock climbing destination in the state of Karnataka" id="Ramanagar">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.5s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("RangaswamyBettaTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/rangaswamy.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Easy<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Rangaswamy Betta</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("RangaswamyBettaTrek", "OneDayTrekking")" data-title="Rangaswamy Betta Trek" data-image="~/Content/homeimg/rangaswamy.png" data-price="1099" data-description="Around 70 Km from Bangalore off of the Kanakapura road,lies the Rangaswamy betta or Bilikal Bettakpura road is the Bilikal Betta.Belonging to the forest reserve, the Hill is covered in shrub forest. Every year locals from the surrounding area climb this hill to celebrate a festival at the Ranganathswamy temple at the top. The way they have been following throughout the years has turned into a standard trekking trail" id="Ranganathswamy">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("NarayanagiriTrek", "OneDayTrekking")">
+                            <img src="~/Content/homeimg/Narayanagiri.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>1099</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Narayanagiri</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn" >
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("NarayanagiriTrek", "OneDayTrekking")" data-title="Narayanagiri Trek" data-image="~/Content/homeimg/Narayanagiri.png" data-price="1099" data-description="Around 76 Km from Bangalore, Narayanagiri hill is one of the lesser known mountain peaks in Karntaka. This peak lies around 20 Km from Ramanagara and is nearly 3800ft in height.Home to the temple of LaxmiNarayana which is open only in the weekends, with remains of the fort encircling the mountain can be seen from the peak.A vast number of natural caves can be explored on your way up." id="Narayanagiri">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+
+        </div>
+        <!-- End row -->
+        <!--</section>-->
+        <hr>
+        <div class="main_title" id="best">
+            <h2>Top <span>Twoday</span> Trek</h2>
+            <p>The world's best mountains are as rugged as they are beautiful.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.1s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("BhramagiriHillsTrek", "TwoDayTrekking")">
+                            <img src="~/Content/homeimg/Bhramagiribanner.png" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Moderate<span class="price"><sup>Rs </sup>3699</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Bhramagiri Hill</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("BhramagiriHillsTrek", "TwoDayTrekking")" data-title="Bhramagiri Hill Trek" data-image="~/Content/homeimg/Bhramagiribanner.png" data-price="3699" data-description="Trekking on the Brahmagiri Hill is trekking at on altitude of the more than 1600 metres.This range is situated in the Western Ghats.Located at the border between the Indian States of Karnataka and Kerala, this place is 270 km from Bangalore.The best way to reach this trekking region is through Coorg. From Coorg, the Brahmagiri Hill trekking range is just 60 km." id="Brahmagiri">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("GokarnaTrek", "TwoDayTrekking")">
+                            <img src="~/Content/homeimg/Gokarnabanner.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Moderate<span class="price"><sup>Rs </sup>3699</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Gokarna outing</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("GokarnaTrek", "TwoDayTrekking")" data-title="Gokarna Trek" data-image="~/Content/homeimg/Gokarnabanner.png" data-price="3699" data-description="The Kumta to Gokarna Beach Trek is a 20 Km long hike between 2 towns in the Uttarakannada district Kumta and Gokarna. The Trek starts from Kumta Beach and goes all the way upto Gokarna Beach passing over 15 Beaches on route." id="Gokarna">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("KodachadriTrek", "TwoDayTrekking")">
+                            <img src="~/Content/homeimg/Kodachadri.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>3699</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Kodachadri</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("KodachadriTrek", "TwoDayTrekking")" data-title="Kodachadri Trek" data-image="~/Content/homeimg/Kodachadri.png" data-price="3699" data-description="Kodachadri is located in Shimoga district and perhaps one of the most spoken about trails in Karnataka. The temple of Sri Mookambika at Kollur, some 21 km from Kodachadri of Adi Shankara and of Goddess Mookambika becaon to tourists all year round to given that most of these temples are nestled in Misty dense forest with pleasantly cool surroundings its snow surprise the people thromg to them from all over the world" id="Kodachadri">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("KumaraParvathaTrek", "TwoDayTrekking")">
+                            <img src="~/Content/homeimg/kp.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>3699</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Kumara Parvatha</strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("KumaraParvathaTrek", "TwoDayTrekking")" data-title="Kumara Parvatha Trek" data-image="~/Content/homeimg/kp.png" data-price="3699" data-description="Kumara Parvatha also called as Pushpagiri is the thrid tallest Peak in the Wester Ghats of Karnataka at a height of 1712m (5624 ft) is very close to Kukke Subramanya temple and is on of the most beautiful peaks in the whole of Wester Ghats" id="Kumara">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.5s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("MullayanagiriTrek", "TwoDayTrekking")">
+                            <img src="~/Content/homeimg/mullayanagiri.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>3699</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Mullayanagiri </strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("MullayanagiriTrek", "TwoDayTrekking")" data-title="Mullayanagiri Trek" data-image="~/Content/homeimg/mullayanagiri.png" data-price="3699" data-description="Set off for trek Mullayanagiri a majestic mountain located in the Wester Ghats. MUllayanagiri is the highest peak in Karnataka sitting at 6330 feet in the chikmangalur taluk and the trek and the jungle trails will encourage you to bond with fellow trekkers and is perfect for team building and camaraderie you will also see water falls and enjoy great food and warm local hospatality." id="Mullayanagiri">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("SakleshpurTrek", "TwoDayTrekking")">
+                            <img src="~/Content/homeimg/sakleshpur.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Moderate<span class="price"><sup>Rs </sup>3699</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Sakleshpur </strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("SakleshpurTrek", "TwoDayTrekking")" data-title="Sakleshpur Trek" data-image="~/Content/homeimg/sakleshpur.png" data-price="3699" data-description="Sakleshpur is frequented by trek enthusiastics and people who are interested in outdoor camping from mountain one can avail views of the surroundings rise terraces.The site is also a preferred spot of picnicking and outdoor camping for volcanic acticities in this region.The mountain has got its name which means fiery mountain." id="Sakleshpur">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+
+            <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                <div class="tour_container">
+                    <div class="img_container">
+                        <a href="@Url.Action("ThadiyandamolTrek", "TwoDayTrekking")">
+                            <img src="~/Content/homeimg/thadiyandamol.png" width="800" height="533" class="img-responsive" alt="image">
+                            <div class="short_info">
+                                <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>3699</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tour_title">
+                        <h3><strong>Thadiyandamol </strong> Trek</h3>
+                        <div class="rating">
+                            <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                        </div>
+                        <!-- end rating -->
+                        <div class="wishlist" id="myBtn">
+                            <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("ThadiyandamolTrek", "TwoDayTrekking")" data-title="Thadiyandamol Trek" data-image="~/Content/homeimg/thadiyandamol.png" data-price="3699" data-description="Madikeri/Bangalore : A breath taking sunrise with puffs of clouds dotting the sky verdant forest and a stunning view of the valley/Thadiyandamol - The tallest peak in Kodagu district is a tourists paradise" id="Thadiyandamol">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                        </div>
+                        <!-- End wish list-->
+                    </div>
+                </div>
+                <!-- End box tour -->
+            </div>
+            <!-- End col-md-4 -->
+        </div>
+        <!-- End row -->
+
+    </div>
+    <!-- End container -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+
+            <span class="close" id="close">&times;</span>
+            <div align="center"><img src="~/Content/CustomImg/heart.png"></div>
+            <div class="modal-body">
+                <center> <h4>This Trek added to Wishlist Successfully</h4></center>
+                <p></p>
+            </div>
+
+        </div>
+
+    </div>
+</main>

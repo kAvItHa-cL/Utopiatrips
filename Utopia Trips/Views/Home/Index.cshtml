@@ -1,0 +1,368 @@
+﻿
+@{
+    ViewBag.Title = "Trekking, one day outing, Night trek - Utopiatrips";
+}
+
+@section metatags
+{
+    <meta name="keywords" content="places to visit near bangalore,trekking places near me,places near bangalore,places to visit around bangalore,places to visit near bangalore one day trip,places to visit near bangalore within 100 kms,makalidurga,2 day trip near bangalore,trucking places in karnataka,best camping places near bangalore" />
+    <meta name="description" content="Find the best places to visit around Bangalore, 2 day Trip near Bangalore, best camping places near Bangalore and much more with Utopia Trips" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+}
+
+    <main>
+        <!-- Slider -->
+        <div id="full-slider-wrapper">
+            <div id="layerslider" style="width:100%;height:600px;">
+
+                <!-- first slide -->
+                <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:5;">
+                    <img src="~/SliderImages/Anthargange.jpg" class="ls-bg" alt="Slide background">
+                    <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">OVERLOOK PICTURESQUE VIEW FROM THIS PEAK</h3>
+                    <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">Respite as mist clears and the first Sun rays kiss you</p>
+                    <a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Know more</a>
+                </div>
+                <!-- second slide -->
+                <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:85;">
+                    <img src="~/SliderImages/agumbe.jpg" class="ls-bg" alt="Slide background">
+                    <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">LULL AT THE SERENE AGUMBE BACKWATERS</h3>
+                    <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">Sweat out your stress as you reach this uncharted beauty</p>
+                    <a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href="@Url.Action("AgumbeTrekking", "BestTrekking")">Know more</a>
+                </div>
+                <!-- third slide -->
+                <div class="ls-slide" data-ls="slidedelay:5000; transition2d:103;">
+                    <img src="~/SliderImages/kavaledurga.jpg" class="ls-bg" alt="Slide background">
+                    <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">THROW YOURSELF BACK IN TIME AT THIS ANCIENT BURG</h3>
+                    <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">Walk through the pages of history in a 9th century </p>
+                    <a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href="@Url.Action("KavaledurgaTrekking", "BestTrekking")">Know more</a>
+                </div>
+                <!-- fourth slide -->
+                <div class="ls-slide" data-ls="slidedelay: 5000; transition2d:14;">
+                    <img src="~/SliderImages/kundadri.jpg" class="ls-bg" alt="Slide background">
+                    <h3 class="ls-l slide_typo" style="top: 45%; left: 50%;" data-ls="offsetxin:0;durationin:2000;delayin:1000;easingin:easeOutElastic;rotatexin:90;transformoriginin:50% bottom 0;offsetxout:0;rotatexout:90;transformoriginout:50% bottom 0;">DRAPE YOURSELF IN MIST AT THIS HILLTOP</h3>
+                    <p class="ls-l slide_typo_2" style="top:52%; left:50%;" data-ls="durationin:2000;delayin:1000;easingin:easeOutElastic;">Bask in the tranquility of Western Ghat mornings</p>
+                    <a class="ls-l button_intro_2 outline" style="top:370px; left:50%;white-space: nowrap;" data-ls="durationin:2000;delayin:1400;easingin:easeOutElastic;" href="@Url.Action("KundariTrekking", "BestTrekking")">Know more</a>
+                </div>
+            </div>
+        </div>
+        <!-- End layerslider -->
+        <a style="overflow: hidden;position: fixed; right: 30px; bottom: 30px;z-index: 1000; cursor:pointer;">
+            <img id="gift" src="~/Content/CustomImg/giftgif.gif" />
+        </a>
+        <div class="container margin_60">
+            <div class="main_title">
+                <h2>Top <span>One Day</span> Trek</h2>
+                <p>Awe-Inspiring scenery and glorious mountains are calling you!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="tour_container">
+                        <div class="img_container">
+                            <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">
+                                <img src="~/Content/homeimg/anthargangebanner.png" width="800" height="533" class="img-responsive" alt="image">
+                                <div class="short_info">
+                                    <i class="icon_set_1_icon-30"></i>Moderate<span class="price"><sup>Rs </sup>1099</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title">
+                            <h3><strong>Antharagange</strong> Trek</h3>
+                            <div class="rating">
+                                <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                            </div>
+                            <!-- end rating -->
+                            <div class="wishlist" id="myBtn">
+                                <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("AntharagangeTrek", "OneDayTrekking")" data-title="Antharagange Trek" data-image="~/Content/homeimg/anthargangebanner.png" data-price="1099" data-description="Antharagange is a famous hill spot near bangalore, Known for caves. The parking lot in the map above serves as the trek starting point as well. It is safe to park your vehicle there overnight. The trek starts with steps to the Anthargange pool/ temple also called as Sri Kashi Vishweshwara temple." id="Antharagange">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                            </div>
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col-md-4 -->
+
+                <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.5s">
+                    <div class="tour_container">
+                        <div class="img_container">
+                            <a href="@Url.Action("KuntiBettaTrek", "OneDayTrekking")">
+                                <img src="~/Content/homeimg/kunti.png" width="800" height="533" class="img-responsive" alt="image">
+                                <div class="short_info">
+                                    <i class="icon_set_1_icon-30"></i>Easy<span class="price"><sup>Rs </sup>1099</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title">
+                            <h3><strong>Kunti Betta</strong> Trek</h3>
+                            <div class="rating">
+                                <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                            </div>
+                            <!-- end rating -->
+                            <div class="wishlist" id="myBtn">
+                                <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("KuntiBettaTrek", "OneDayTrekking")" data-title="Kunti Betta Trek" data-image="~/Content/homeimg/kunti.png" data-price="1099" data-description="Kunti Betta is a picturesque hill in the quaint town of Padavapura,marked by the two hills at an elevation of 2882m,the kunti betta is a must do an trekkers itinerary.This 3 hour trek is ideal for both domestic and international trekkers;nature lovers,thrill seeking couples and backpackers will enjoy this adventure." id="kunti">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                            </div>
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col-md-4 -->
+                <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="tour_container">
+                        <div class="img_container">
+                            <a href="@Url.Action("MaklidurgaTrek", "OneDayTrekking")">
+                                <img src="~/Content/homeimg/maklidurga.png" width="800" height="533" class="img-responsive" alt="image">
+                                <div class="short_info">
+                                    <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>1099</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title">
+                            <h3><strong>Maklidurga</strong> Trek</h3>
+                            <div class="rating">
+                                <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                            </div>
+                            <!-- end rating -->
+                            <div class="wishlist" id="myBtn">
+                                <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("MaklidurgaTrek", "OneDayTrekking")" data-title="Maklidurga Trek" data-image="~/Content/homeimg/maklidurga.png" data-price="1099" data-description="Makali Durga trek is the nearest railway trek to Bangalore.It Begins with a 2km walk on the railway track from the station of MakaliDurga. One can also ride bikes to the beginning of the trekking trail as well. A lot of refreshments is advised to be carried in case one wants to trek this hillock" id="Makali">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                            </div>
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+
+
+            </div>
+            <!-- End row -->
+            <p class="text-center add_bottom_30">
+                <a href="@Url.Action("AllTreks","AllTours")" class="btn_1 medium"><i class="icon-eye-7"></i>View all Treks  </a>
+            </p>
+            <hr>
+            <div class="main_title">
+                <h2>Top <span>Twoday</span> Trek</h2>
+                <p>Get out of Bangalore traffic and explore these pristine marvels of nature</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                    <div class="tour_container">
+                        <div class="img_container">
+                            <a href="@Url.Action("GokarnaTrek", "TwoDayTrekking")">
+                                <img src="~/Content/homeimg/Gokarnabanner.png" width="800" height="533" class="img-responsive" alt="image">
+                                <div class="short_info">
+                                    <i class="icon_set_1_icon-30"></i>Moderate<span class="price"><sup>Rs </sup>3699</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title">
+                            <h3><strong>Gokarna outing</strong> Trek</h3>
+                            <div class="rating">
+                                <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                            </div>
+                            <!-- end rating -->
+                            <div class="wishlist">
+                                <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("GokarnaTrek", "TwoDayTrekking")" data-title="Gokarna Trek" data-image="~/Content/homeimg/Gokarnabanner.png" data-price="3699" data-description="The Kumta to Gokarna Beach Trek is a 20 Km long hike between 2 towns in the Uttarakannada district Kumta and Gokarna. The Trek starts from Kumta Beach and goes all the way upto Gokarna Beach passing over 15 Beaches on route." id="Gokarna">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                            </div>
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col-md-4 -->
+                <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="tour_container">
+                        <div class="img_container">
+                            <a href="@Url.Action("KodachadriTrek", "TwoDayTrekking")">
+                                <img src="~/Content/homeimg/Kodachadri.png" width="800" height="533" class="img-responsive" alt="image">
+                                <div class="short_info">
+                                    <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>3699</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title">
+                            <h3><strong>Kodachadri</strong> Trek</h3>
+                            <div class="rating">
+                                <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                            </div>
+                            <!-- end rating -->
+                            <div class="wishlist" id="myBtn">
+                                <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-url="@Url.Action("KodachadriTrek", "TwoDayTrekking")" data-title="Kodachadri Trek" data-image="~/Content/homeimg/Kodachadri.png" data-price="3699" data-description="Kodachadri is located in Shimoga district and perhaps one of the most spoken about trails in Karnataka. The temple of Sri Mookambika at Kollur, some 21 km from Kodachadri of Adi Shankara and of Goddess Mookambika becaon to tourists all year round to given that most of these temples are nestled in Misty dense forest with pleasantly cool surroundings its snow surprise the people thromg to them from all over the world" id="Kodachadri">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                            </div>
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+
+                <div class="col-md-4 col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                    <div class="tour_container">
+                        <div class="img_container">
+                            <a href="@Url.Action("ThadiyandamolTrek", "TwoDayTrekking")">
+                                <img src="~/Content/homeimg/thadiyandamol.png" width="800" height="533" class="img-responsive" alt="image">
+                                <div class="short_info">
+                                    <i class="icon_set_1_icon-30"></i>Difficult<span class="price"><sup>Rs </sup>3699</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="tour_title">
+                            <h3><strong>Thadiyandamol </strong> Trek</h3>
+                            <div class="rating">
+                                <i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile voted"></i><i class="icon-smile"></i><small></small>
+                            </div>
+                            <!-- end rating -->
+                            <div class="wishlist" id="myBtn">
+                                <a class="tooltip_flip tooltip-effect-1" href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal" data-url="@Url.Action("ThadiyandamolTrek", "TwoDayTrekking")" data-title="Thadiyandamol Trek" data-image="~/Content/homeimg/thadiyandamol.png" data-price="3699" data-description="Madikeri/Bangalore : A breath taking sunrise with puffs of clouds dotting the sky verdant forest and a stunning view of the valley/Thadiyandamol - The tallest peak in Kodagu district is a tourists paradise" id="Thadiyandamol">+<span class="tooltip-content-flip"><span class="tooltip-back">Add to wishlist</span></span></a>
+                            </div>
+                            <!-- End wish list-->
+                        </div>
+                    </div>
+                    <!-- End box tour -->
+                </div>
+                <!-- End col-md-4 -->
+
+            </div>
+            <!-- End row -->
+            <p class="text-center add_bottom_30">
+                <a href="@Url.Action("AllTreks","AllTours")" class="btn_1 medium"><i class="icon-eye-7"></i>View all Treks </a>
+            </p>
+        </div>
+        <div class="white_bg">
+            <div class="container margin_60">
+
+                <div class="banner colored">
+                    <h4>KNOW ABOUT OUR ENTHRALLING ADVENTURES STARTING FROM INR 7/Km</h4>
+                    <p>
+                        Get in touch to customize and plan your trek today!
+                    </p>
+                    <a href="@Url.Action("FindUs", "ContactUs")" class="btn_1 white">Know more</a>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <p>
+                            <a href="#"><img src="../Content/CustomImg/trekking.jpg" width="800" height="450" alt="Utopiatrips Pic" class="img-responsive"></a>
+                        </p>
+                        <h4><span>ONE DAY TREKS</span> BOOKING</h4>
+                        <p>
+                            Escape from your hectic work schedules and lose yourself in the mystic hills around Bangalore. Our one day treks in Bangalore promise you unmatched fun, peaceful solitude, spectacular views and just the feels you need to refresh your mind and declutter your life! So, when are you putting your trek shoes on?
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <p>
+                            <a href="#"><img src="~/Content/CustomImg/sightseeing.jpg" width="800" height="450" alt="Utopiatrips" pic="" class="img-responsive"></a>
+                        </p>
+                        <h4><span>OUT OF BANGALORE TREKS</span> BOOKING</h4>
+                        <p>
+                            Do you, at times, feel like you should get away from the concrete jungle and get one with nature? We have some beautiful natural wonders around Bangalore which will offer you all the relief you need, and more! Give us two days of your busy life and we will ensure you an adventure that shall remain in the lanes of your memory for years to come!
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <p>
+                            <a href="#"><img src="~/Content/CustomImg/relaxing.jpg" width="800" height="450" alt="Utopiatrips" pic="" class="img-responsive"></a>
+                        </p>
+                        <h4><span>LESS EXPLORED TREKS</span> BOOKING</h4>
+                        <p>
+                            There are a few nature made masterpieces that haven't been tampered by the hands of irresponsible travelers. These places lay way out of reach from human interaction. We have sensibly explored such beauties. We wish to take you on such treks where we can witness nature at its untarnished best!
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <p>
+                            <a href="#"><img src="~/Content/CustomImg/oneday.jpg" width="800" height="450" alt="Utopiatrips" pic="" class="img-responsive"></a>
+                        </p>
+                        <h4><span>WANDERLUST HANGOUTS</span> BOOKING</h4>
+                        <p>
+                            We love trekking, adventure and getting lost in enigmatic places! And we are sure there are other Wanderlusts like us! Are you Wanderlust too? Then you are welcome to join us at our monthly hangouts. We hangout at great trekking destinations, and you can be a part of such Wanderlust hangouts!
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- End container -->
+        </div>
+
+        <!-- End white_bg -->
+        <section class="promo_full" style="background: #4d536d url('../Content/homeimg/indeximg.jpg') no-repeat center center; background-size: cover;">
+            <div class="promo_full_wp magnific">
+                <div>
+                    <h3>SEE WHAT YOU'RE GONNA EXPERIENCE</h3>
+                    <p>
+                        We show you glimpses of picture perfect frames and breathtaking adventures our treks have got to offer you. This could as well be a teaser of what you're going to experience!
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=oMDwPRpfVl8" class="video"><i class="icon-play-circled2-1"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- End section -->
+
+        <div class="container margin_60">
+
+            <div class="main_title">
+                <h2>WHY TREK WITH US?</h2>
+                <!--<p>
+                Quisque at tortor a libero posuere laoreet vitae sed arcu. Curabitur consequat.
+            </p>-->
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 wow zoomIn" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">
+                    <div class="feature_home">
+                        <i class=" icon_set_1_icon-29"></i>
+                        <h3>Experience</h3>
+                        <p>
+                            We know that paths we tread, for we have walked these paths so many times! We know every single detail of the treks, and that gives us the edge. We aren't just organizers but trekkers ourselves. Our experience is what we rely on while leading the pack!
+                        </p>
+                        <p></p>
+                        <a href="@Url.Action("About", "AboutUs")" class="btn_1 outline">Read more</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow zoomIn" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: zoomIn;">
+                    <div class="feature_home">
+                        <i class="icon-money"></i>
+                        <h3>Best prices</h3>
+                        <p>
+                            There are trek organizers and then there are trek organizers who touch a nerve with people they interact. We are the latter ones. We believe in offering great experiences at costs that make you convinced that they are worth it. Ours is easily the best priced trek organization!
+                        </p>
+
+                        <p></p>
+                        <a href="@Url.Action("About", "AboutUs")" class="btn_1 outline">Read more</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 wow zoomIn" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: zoomIn;">
+                    <div class="feature_home">
+                        <i class="icon-heart-empty-3"></i>
+                        <h3>Couples friendly</h3>
+                        <p>
+                            For couples, there's a dearth of options for things to do in Bangalore. We identify with you. Keeping this in mind, we have treks that are customized specially for couples. You no longer have to brood over keeping things happening in your relationship.
+                        </p>
+                        <p></p>
+                        <a href="@Url.Action("About", "AboutUs")" class="btn_1 outline">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+            <!--End row -->
+            <hr>
+        </div>
+        @Html.Hidden("RedirectTo", Url.Action("Login", "Login"))
+        <!-- End container -->
+        @*<div id="myModal" class="modal">
+            <div class="modal-content">
+                
+                    <span class="close" id="close">&times;</span>
+                        <div align="center"><img src="~/Content/CustomImg/heart.png"></div>
+                <div class="modal-body">
+                    <center> <h4>This Trek added to Wishlist Successfully</h4></center>
+                    <p></p>
+                </div>
+
+            </div>
+
+        </div>*@
+    </main>
+<script src="~/Content/js/notify_func.js"></script>
+<script type="text/javascript" src="~/Content/js/pop_up.min.js"></script>
+<script type="text/javascript" src="~/Content/js/pop_up_func.js"></script>

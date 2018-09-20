@@ -1,0 +1,173 @@
+﻿
+@{
+    ViewBag.Title = "Faq";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="../Content/CustomImg/alltripbanner.jpg" data-natural-width="1200" data-natural-height="430">
+    <div class="parallax-content-1">
+        <div class="animated fadeInDown">
+            <h1>Faq</h1>
+            <p>Take only memories.......Leave only footprints</p>
+        </div>
+    </div>
+</section>
+
+
+
+<main>
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href=@Url.Action("Index", "Default")><span>Home</span></a>
+                </li>
+                <li>Page active</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Position -->
+
+    <div class="container margin_80">
+        <div class="row">
+
+            <!--End aside -->
+            <br></br>
+            <div class="col-lg-9 col-md-9" id="faq">
+                <h3 class="nomargin_top">Frequently asked Questions</h3>
+
+                <div class="panel-group" id="payment">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseOne_payment">Does the owner of the credit card with which the ticket is purchased need to be one of the passengers?<i class="indicator icon-minus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne_payment" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Not at all! A passenger can use any card to pay for the ticket, not necessarily their own. However, please note that the passenger in whose name the ticket is booked should carry a proof of his identity (along with the ticket) at the time of boarding the vehicle.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseTwo_payment">Is it safe to use my credit card on this site?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo_payment" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Transactions on Utopia Trips are very safe. We employ the best-in-class security and the transactions done are secure. Utopia Trips uses Secured Socket Layers (SSL) data encryption. Using SSL ensures that the information exchanged with us is never transmitted unencrypted, thus protecting the information from being viewed by unauthorized individuals.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#payment" href="#collapseThree_payment">What payment options do I have?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree_payment" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                The different payment options are
+                                •    Credit card
+                                •    Debit card
+                                •    Internet banking (Internet enabled online bank account)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#Cancellation" href="#collapseOne_Cancellation">Can I cancel my ticket online?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne_Cancellation" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Yes, The Tickets booked online can be cancelled only online
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#Cancellation" href="#collapseTwo_Cancellation">Cancellation Charges?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo_Cancellation" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Less than 6 hours from the station departure time: 100 %
+                                Between 6 Hrs to 24 Hrs from the station departure time: 30 %
+                                Between 1 to 30 days before station departure time: 15 %
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#Refund" href="#collapseOne_Refund">I missed the bus. Do I get a refund?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne_Refund" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Utopia Trips provides a 100% refund if the bus is missed due to our fault. However, if the bus is missed due to any other reason not directly related to Utopia Trips no refund is provided.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#Refund" href="#collapseTwo_Refund">Is it mandatory to take a printout of the ticket?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo_Refund" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                No. the SMS that is sent to your mobile can be produced at the time of boarding and you will be allowed to travel
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#Refund" href="#collapseThree_Refund">we get any SMS alerts from GPS before the bus departure and Arrival?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree_Refund" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Yes you will  gets realtime periodic SMSes about the location, delay info of the bus.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#Refund" href="#collapseFour_Refund">I've lost my ticket. What should I do now?<i class="indicator icon-plus pull-right"></i></a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour_Refund" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                A copy of the ticket would have been sent to you by e-mail when you booked it. Please take a printout of that mail and produce it at the time of boarding. If you have not received the ticket e-mail, please call any of our call center and our executive will re-send you a copy by mail.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End col lg-9 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End container -->
+</main>
+<!-- End main -->

@@ -1,0 +1,235 @@
+﻿
+@{
+    ViewBag.Title = "Hotspots | Utopiatrips";
+    Layout = null;
+}
+
+@section metatags
+{
+    <meta name="keywords" content="utopiatrips hotspots" />
+    <meta name="description" content="Utopia Trips has the best trekking places in and around Bangalore. Say bye to the urban hustles and get one with nature with the best Utopia Trips hotspots. " />
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Utopiatrips - Trekking around banglore,trekking, adventure,night trek">
+    <meta name="author" content="Utoipatrips">
+    <title>Utopiatrips - Explore To Live</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="~/Content/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="~/Content/img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="~/Content/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="~/Content/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="~/Content/img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+    <!-- CSS -->
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/menu.css" rel="stylesheet" />
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <link href="~/Content/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Content/css/pop_up.css" rel="stylesheet" />
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/css/fontello/css/all-fontello.min.css" rel="stylesheet" />
+    <link href="~/Content/css/new_icons/css/icon_set_all.min.css" rel="stylesheet" />
+    <link href="~/Content/css/icon_restaurant/css/icon_restaurants.min.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <!--[if lte IE 8]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+    <![endif]-->
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+    <!-- Header Plain:  add the id plain to header and change logo.png to logo_sticky.png ======================= -->
+    <header id="plain">
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6"><i class="icon-phone"></i><strong>+91-8197993224</strong></div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <ul id="top_links">
+                            <li>
+                                @Html.ActionLink("Wishlist", "BucketList", "Wishlist", null, new { @id = "wishlist_link" })
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- End row -->
+            </div><!-- End container-->
+        </div><!-- End top line-->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo_home">
+                        <img src="~/Content/img/logo.png" width="160" height="34" alt="Utopiatrips" data-retina="true" class="logo_sticky">
+                    </div>
+                </div>
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="~/Content/img/logo.png" width="160" height="34" alt="Utopiatrips" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="submenu">
+                                @Html.ActionLink("Home", "Index", "Home", null, null)
+                            </li>
+
+
+                            <li class="megamenu submenu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">Treks<i class="icon-down-open-mini"></i></a>
+                                <div class="menu-wrapper">
+                                    <div class="col-md-4">
+                                        <h3><b>One Day Trek</b></h3>
+                                        <ul>
+                                            <li>@Html.ActionLink("Antharagange Trek (Day/Night)", "AntharagangeTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kunthi Betta Trek (Day/Night)", "KuntiBettaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Makali Durga Trek (Day/Night)", "MaklidurgaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Ramamdevara Betta Trek (Day/Night)", "RamadevaraBettaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Rangaswamy Betta Trek (Night)", "RangaswamyBettaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Savandurga Hill Trek (Day/Night)", "SavandurgaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Hari Hara Hill Trek(Night)", "HariHaraTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kabal Durga Hill Trek (Night)", "KabbalDurgaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Narayana Giri Trek (Night)", "NarayanagiriTrek", "OneDayTrekking", null, null)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3><b>Two Day Trek</b></h3>
+                                        <ul>
+                                            <li>@Html.ActionLink("Bhramagiri Hill Trek", "BhramagiriHillsTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kodachadri Trek", "KodachadriTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Sakleshpur Trek", "SakleshpurTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kumaraparvatha Trek", "KumaraParvathaTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Mullayangiri Trek", "MullayanagiriTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Thadiyandamol Trek", "ThadiyandamolTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Gokarna Trek", "GokarnaTrek", "TwoDayTrekking", null, null)</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3><b>Hand Picked</b></h3>
+                                        <ul>
+                                            <li>@Html.ActionLink("Dabbe Falls Trek", "DabbeFallsTrekking", "BestTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kundadri Trek", "KundariTrekking", "BestTrekking", null, null)</li>
+
+                                            <!--<li>@Html.ActionLink("Agumbe Trek", "AgumbeTrekking", "BestTrekking", null, null)</li>
+                                     <li>@Html.ActionLink("Kavaledurga Trek", "KavaledurgaTrekking", "BestTrekking", null, null)</li>
+                                -->
+                                        </ul>
+                                    </div>
+                                </div><!-- End menu-wrapper -->
+                            </li>
+
+                            <li class=" submenu">
+                                @Html.ActionLink("Stories", "Blog", "Blog", null, null)
+                            </li>
+                            <li class="submenu">
+                                @Html.ActionLink("Hotspots", "Hotspots", "Hotspot", null, null)
+                            <li class="submenu"></li>
+                            <li class="submenu">
+                                @Html.ActionLink("Bucket List", "BucketList", "Wishlist", null, null)
+                            </li>
+                            <li class=" submenu">
+                                @Html.ActionLink("Best Clicks", "Gallery", "BestClick", null, null)
+                            </li>
+                            <li class="submenu">
+                                @Html.ActionLink("Gift Card", "GiftCard", "GiftCards", null, null)
+                            <li class="submenu"></li>
+                            <li class="submenu">
+                                @Html.ActionLink("Corporate Discount", "CorporateDiscount", "CorporateOuting", null, null)
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">More <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li>@Html.ActionLink("We Are..", "About", "AboutUs", null, null)</li>
+                                    <li>@Html.ActionLink("Find Us", "FindUs", "ContactUs", null, null)</li>
+                                    <li>@Html.ActionLink("FAQ", "FAQ", "FAQ", null, null)</li>
+                                    <li>@Html.ActionLink("Terms", "Terms", "Termsandcondition", null, null)</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <ul id="top_tools">
+                        <li>
+                            <div class="dropdown dropdown-search">
+                                @Html.ActionLink("Sign In", "Login", "Login", null, new { @id = "access_link" })
+                                @*<a href="#" class="search-overlay-menu-btn" data-toggle="dropdown"><i class="icon-search"></i></a>*@
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div><!-- container -->
+    </header><!-- End Header -->
+
+    <div id="map" class="map" style="border-bottom:none; height:100%; width:100%; position:absolute; top:0; left:0;"></div>
+    <div id="map_filter">
+        <ul>
+            <li><a href="javascript:toggleMarkers('OneDayTrek');"><i class="icon_set_1_icon-30"></i><span>Day Trek</span></a></li>
+            <li><a href="javascript:toggleMarkers('NightTrek');"><i class="icon-pitch"></i><span>Night Trek</span></a></li>
+            <li><a href="javascript:toggleMarkers('TwoDayTrek');"><i class="icon_set_1_icon-37"></i><span>Two Day Trek</span></a></li>
+            <li><a href="javascript:toggleMarkers('HandPicked');"><i class="icon-heart-circled"></i><span>Handpicked</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit">
+                <i class="icon_set_1_icon-78"></i>
+            </button>
+        </form>
+    </div><!-- End Search Menu -->
+    <!-- Common scripts -->
+    <script src="~/Content/js/jquery-2.2.4.min.js"></script>
+    <script src="~/Content/js/common_scripts_min.js"></script>
+    <script src="~/Content/js/functions.js"></script>
+    <!-- Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyC6H557FxgxlgExCsm4pFZlQWnlzxuTxtA"></script>
+    <script src="~/Content/js/map_full_page.js"></script>
+    <script src="~/Content/js/infobox.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115621226-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115621226-1');
+    </script>
+
+</body>
+</html>

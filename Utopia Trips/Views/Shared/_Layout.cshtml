@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @RenderSection("metatags", false)
+    <meta name="author" content="Utoipatrips">
+    <title>@ViewBag.Title </title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="~/Content/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="~/Content/image/x-icon" href="~/Content/img/favicon.ico">
+    <link rel="apple-touch-icon" type="~/Content/image/x-icon" sizes="72x72" href="~/Content/img/favicon.ico">
+    <link rel="apple-touch-icon" type="~/Content/image/x-icon" sizes="114x114" href="~/Content/img/favicon.ico">
+    <link rel="apple-touch-icon" type="~/Content/image/x-icon" sizes="144x144" href="~/Content/img/favicon.ico">
+
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+    <link href="~/Content/layerslider/css/layerslider.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/animate.css" rel="stylesheet" />
+    <link href="~/Content/css/menu.css" rel="stylesheet" />
+    <link href="~/Content/css/responsive.css" rel="stylesheet" />
+    <link href="~/Content/css/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Content/css/pop_up.css" rel="stylesheet" />
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
+    <link href="~/Content/css/fontello/css/all-fontello.min.css" rel="stylesheet" />
+    <link href="~/Content/css/new_icons/css/icon_set_all.min.css" rel="stylesheet" />
+    <link href="~/Content/css/icon_restaurant/css/icon_restaurants.min.css" rel="stylesheet" />
+    
+    <script src="~/Content/js/jquery-2.2.4.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+    <!-- Header================================================== -->
+    <header>
+        <div id="top_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <i class="icon-phone"></i><strong>8197993224</strong>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <ul id="top_links">
+                            <li>
+                                @Html.ActionLink("Wishlist", "BucketList", "Wishlist", null, new { @id = "wishlist_link" })
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End container-->
+        </div>
+        <!-- End top line-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div id="logo">
+                        <a href="@Url.Action("Index", "Home")">
+                            <img src="~/Content/img/logo.png" width="160" height="34" alt="Utopiatrips" data-retina="true" class="logo_normal">
+                        </a>
+                        <a href="@Url.Action("Index", "Home")">
+                            <img src="~/Content/img/logo.png" width="160" height="34" alt="Utopiatrips" data-retina="true" class="logo_sticky">
+                        </a>
+                    </div>
+                </div>
+
+                <nav class="col-md-9 col-sm-9 col-xs-9">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                    <div class="main-menu">
+                        <div id="header_menu">
+                            <img src="~/Content/img/logo.png" width="160" height="34" alt="Utopiatrips" data-retina="true">
+                        </div>
+                        <a href="#" class="open_close" id="close_in"><i class="icon_set_1_icon-77"></i></a>
+                        <ul>
+                            <li class="submenu">
+                                @Html.ActionLink("Home", "Index", "Home", null, null)
+                            </li>
+
+
+                            <li class="megamenu submenu">
+                                <a href="javascript:void(0);" class="show-submenu-mega">
+                                    Treks  <i class="icon-down-open-mini"></i>
+                                </a>
+                                <div class="menu-wrapper">
+                                    <div class="col-md-4">
+                                        <h3><b>One Day Trek</b></h3>
+                                        <ul>
+                                            <li>@Html.ActionLink("Anthargange Trek (Day/Night)", "AntharagangeTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kunthi Betta Trek (Day/Night)", "KuntiBettaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("MakaliDurga Trek (Day/Night)", "MaklidurgaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Ramdevara Betta Trek (Day/Night)", "RamadevaraBettaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Rangaswamy Betta Trek (Night)", "RangaswamyBettaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Savandurga Hill Trek (Day/Night)", "SavandurgaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Hari Hara Hill Trek(Night)", "HariHaraTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("KabalDurga Hill Trek (Night)", "KabbalDurgaTrek", "OneDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("NarayanGiri Trek (Night)", "NarayanagiriTrek", "OneDayTrekking", null, null)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3><b>Two Day Trek</b></h3>
+                                        <ul>
+                                            <li>@Html.ActionLink("Bhramagiri Hill Trek", "BhramagiriHillsTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kodachadri Trek", "KodachadriTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Sakleshpur Trek", "SakleshpurTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kumara Parvatha Trek", "KumaraParvathaTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Mullayangiri Trek", "MullayanagiriTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Thadiyandamol Trek", "ThadiyandamolTrek", "TwoDayTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Gokarna Trek", "GokarnaTrek", "TwoDayTrekking", null, null)</li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h3><b>Hand Picked</b></h3>
+                                        <ul>
+                                            <li>@Html.ActionLink("Kodachadri Trek", "Kodachadri", "BestTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("DabbeFalls Trek", "DabbeFallsTrekking", "BestTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Kundadri Trek", "KundariTrekking", "BestTrekking", null, null)</li>
+                                            <li>@Html.ActionLink("Dandeli Trek", "Dandeli", "BestTrekking", null, null)</li>
+
+
+                                            <!--<li>@Html.ActionLink("Agumbe Trek", "AgumbeTrekking", "BestTrekking", null, null)</li>
+                                                 <li>@Html.ActionLink("Kavaledurga Trek", "KavaledurgaTrekking", "BestTrekking", null, null)</li>
+                                            -->
+                                        </ul>
+                                    </div>
+                                </div><!-- End menu-wrapper -->
+                            </li>
+
+                            <li class=" submenu">
+                                @Html.ActionLink("Stories", "Blog", "Blog", null, null)
+                            </li>
+                            <li class="submenu">
+                                @Html.ActionLink("Hotspots", "Hotspots", "Hotspot", null, null)
+                            <li class="submenu"></li>
+                            <li class="submenu">
+                                @Html.ActionLink("Bucket List", "BucketList", "Wishlist", null, null)
+                            </li>
+                            <li class=" submenu">
+                                @Html.ActionLink("Best Clicks", "Gallery", "BestClick", null, null)
+                            </li>
+                            <li class="submenu">
+                                @Html.ActionLink("Gift Card", "GiftCards", "GiftCard", null, null)
+                            </li>
+                            <li class="submenu">
+                                @Html.ActionLink("Corporate Discount", "CorporateOuting", "CorporateDiscount", null, null)
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:void(0);" class="show-submenu">More <i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li>@Html.ActionLink("We Are..", "About", "AboutUs", null, null)</li>
+                                    <li>@Html.ActionLink("Find Us", "FindUs", "ContactUs", null, null)</li>
+                                    <li>@Html.ActionLink("FAQ", "FAQ", "FAQ", null, null)</li>
+                                    <li>@Html.ActionLink("Terms", "Terms", "Termsandcondition", null, null)</li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <ul id="top_tools">
+                        <li>
+                            <div class="dropdown dropdown-search">
+                                @{
+                                    var user = Session["user"];
+                                }
+                                @if (user == null)
+                                {
+
+                                    @Html.ActionLink("Sign In", "Login", "Login", null, new { @id = "access_link", @style = "display:visible" })
+                                    @Html.ActionLink("Sign Out", "Index", "Home", null, new { @id = "singout_link", @style = "display:none" })
+                                }
+                                @if (user != null)
+                                {
+                                    @Html.ActionLink("Sign In", "Login", "Login", null, new { @id = "access_link", @style = "display:none" })
+                                    @Html.ActionLink("Sign Out", "Logout", "Home", null, new { @id = "singout_link", @style = "display:visible" })
+                                } @*<a href="#" class="search-overlay-menu-btn" data-toggle="dropdown"><i class="icon-search"></i></a>*@
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <!-- container -->
+    </header>
+    <!-- End Header -->
+
+    @RenderBody()
+
+    <footer class="revealed">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                    <h3>Need help?</h3>
+                    <a href="tel://8197993224" id="phone">8197993224</a>
+                    <a href="mailto:support@utopiatrips.com" id="email_footer">support@utopiatrips.com</a>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="@Url.Action("About", "AboutUs")">We Are...</a></li>
+                        <li><a href="@Url.Action("FindUs", "ContactUs")">Find Us</a></li>
+                        <li><a href="@Url.Action("Terms", "Termsandcondition")">Terms</a></li>
+                        <li><a href="@Url.Action("FAQ", "FAQ")">FAQ</a></li>
+                    </ul>
+                </div>
+                <!-- End row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="social_footer">
+                            <ul>
+                                <li><a href="https://www.facebook.com/Utopiatrips/" target="_blank"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/utopiatrips/" target="_blank"><i class="icon-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/channel/UCph4fPG_gIKLivVVNLVvZuQ" target="_blank"><i class="icon-youtube-play"></i></a></li>
+                                <li><a href="https://twitter.com/utopiatrips" target="_blank"><i class="icon-twitter"></i></a></li>
+                            </ul>
+                            <p>© utopiatrips 2017</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End container -->
+        </div>
+    </footer>
+
+    <!-- End footer -->
+    <div id="toTop"></div><!-- Back to top button -->
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit">
+                <i class="icon_set_1_icon-78"></i>
+            </button>
+        </form>
+    </div><!-- End Search Menu -->
+    <!-- Common scripts -->
+    <div class="modal fade" id="wishlistsuccess" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#e04f67;border-bottom:none;font-size:16px;">
+                    <br />                    @*<h5 class="modal-title" id="exampleModalLongTitle">Utopiatrips</h5>*@
+
+                    
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>  <center>
+    <h3 class="modal-title" id="exampleModalLongTitle" style="color:white;line-height:0;">Congrats</h3>
+</center>
+
+                </div>
+                <div class="modal-body" style="padding: 34px 16px;font-size:18px;">
+                    Your Wishlist added Successfully
+                </div>
+                <div class="modal-footer" style="background-color:white;border-top:none;padding:15px 71px;">
+                    @*<button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-color:#51bce6;">Close</button>*@
+                    <center>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color:#e04f67;border:none;padding:7px 34px;">OK</button>
+                    </center>  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal to redirect-->
+    <div class="modal fade" id="wishlistfailure" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#e04f67;border-bottom:none;font-size:16px;">
+                    <br />
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+</button>  <center>  <h3 class="modal-title" id="exampleModalLongTitle" style="color:white;line-height:0;">Oops !</h3></center>
+                    
+                </div>
+                <div class="modal-body" style="padding: 34px 16px;font-size:18px;">
+                    Please Login to save your Wishlist
+                </div>
+                <div class="modal-footer" style="background-color:white;border-top:none;padding:15px 71px;">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border:none;padding:7px 30px;color:#e04f67;">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Login","Login")'" style="background-color:#e04f67;border:none;padding:7px 34px;">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal to redirect-->
+    <div class="modal fade" id="wishlistexist" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#e04f67;border-bottom:none;font-size:16px;">
+                    <br />
+                    @*<h5 class="modal-title" id="exampleModalLongTitle">Utopiatrips</h5>*@
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> <center>  <h3 class="modal-title" id="exampleModalLongTitle" style="color:white;line-height:0;">Oops !</h3></center>
+
+                </div>
+                <div class="modal-body" style="padding: 34px 16px;font-size:18px;">
+                    This place already added in your wishlist
+                </div>
+                <div class="modal-footer" style="background-color:white;border-top:none;padding:15px 71px;">
+                        
+                    <center>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" style="background-color:#e04f67;border:none;padding:7px 34px;">OK</button>
+                    </center>
+                   </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/Content/js/common_scripts_min.js"></script>
+    <script src="~/Content/js/functions.js"></script>
+    <!-- Specific scripts -->
+    <script src="~/Content/layerslider/js/greensock.js"></script>
+    <script src="~/Content/layerslider/js/layerslider.transitions.js"></script>
+    <script src="~/Content/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            'use strict';
+            $('#layerslider').layerSlider({
+                autoStart: true,
+                responsive: true,
+                responsiveUnder: 1280,
+                layersContainer: 1170,
+                skinsPath: '/Content/layerslider/skins/'
+                // Please make sure that you didn't forget to add a comma to the line endings
+                // except the last line!
+            });
+
+
+            $(".tooltip_flip").click(function () {
+                var title = $(this).attr("data-title");
+                var image = $(this).attr("data-image");
+                var price = $(this).attr("data-price");
+                var description = $(this).attr("data-description");
+                var id = $(this).attr("id");
+                var url = $(this).attr("data-url");
+                //alert("Wishlist Triggered");
+                $.ajax({
+                    type: "POST",
+                    url: "/Wishlist/AddToWishlist",
+                    data: {
+                        title: title,
+                        image: image,
+                        price: price,
+                        description: description,
+                        id: id,
+                        url: url
+                    },
+
+                    success: function (response) {
+                        //alert(response);
+                        //$("#wishlistsuccess").modal('show');
+
+                        //},
+                        //Error: function (response) {
+                        //    alert("Error");
+                        //   $("#wishlistsuccess").modal('show');
+
+
+
+                        if (response == "Redirect") {
+                            $("#wishlistfailure").modal('show');
+
+                            //var url = $("#RedirectTo").val();
+                            //location.href = url;
+                        }
+                        else if (response == "Success") {
+                            $("#wishlistsuccess").modal('show');
+                        }
+                        else if (response == "Exists") {
+                            $("#wishlistexist").modal('show');
+                        }
+                    }
+
+                });
+            });
+
+
+                    });
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115621226-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115621226-1');
+    </script>
+    @*<script src="~/Content/js/modalscript.js"></script>*@
+
+</body>
+</html>
+

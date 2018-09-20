@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "Gallery | Bestclicks | Utopiatrips";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+@section metatags
+{
+    <meta name="keywords" content="best clicks,bangalore sightseeing,trekker adventures,places near bangalore,places to visit in bangalore in one day,bangalore day trips,best places to visit near bangalore" />
+    <meta name="description" content="Get your best clicks and moments by touring around the best places to visit near Bangalore. Get ready for the best trekking adventures." />
+}
+
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="../Content/Header/bestclicks.jpg" data-natural-width="1200" data-natural-height="430">
+    <div class="parallax-content-1">
+        <div class="animated fadeInDown">
+            <h1>Best Clicks</h1>
+            <p>Take only memories...Leave only footprints</p>
+        </div>
+    </div>
+</section>
+
+<main>
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                
+                <li>Best Clicks</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Position -->
+    <div class="container margin_60">
+        <div class="main_title">
+            <h2>Some <span>images</span> from travellers</h2>
+            <p>
+                photography is a love affair with life
+            </p>
+        </div>
+        <hr>
+        <div class="row magnific-gallery add_bottom_60 ">
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="../Content/bestclicks/bestclicks_7.jpg" title="Brahmagiri Hill">
+                            <img src="../Content/bestclicks/bestclicks_7.jpg" alt="Image" class="img-responsive">
+                            <i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="../Content/bestclicks/bestclicks_2.jpg" title="Anthargange">
+                            <img src="../Content/bestclicks/bestclicks_2.jpg" alt="Image" class="img-responsive">
+                            <i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="../Content/bestclicks/bestclicks_6.jpg" title="Manchanabele Dam">
+                            <img src="../Content/bestclicks/bestclicks_6.jpg" alt="Image" class="img-responsive">
+                            <i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="../Content/bestclicks/bestclicks_3.jpg" title="Bheemeshwari">
+                            <img src="../Content/bestclicks/bestclicks_3.jpg" alt="Image" class="img-responsive">
+                            <i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="~/Content/bestclicks/bestclicks_4.jpg" title="Gokarna">
+                            <img src="~/Content/bestclicks/bestclicks_4.jpg" alt="Image" class="img-responsive">
+                            <i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="../Content/bestclicks/bestclicks_5.jpg" title="Mullayyangiri">
+                            <img src="~/Content/bestclicks/bestclicks_5.jpg" alt="Image" class="img-responsive">
+                            <i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End row -->
+        <div class="main_title">
+            <h2>Some <span>videos</span> from travellers</h2>
+            <p>
+                we bring you the finest sights and adventures the world has to offer. Immerse yourself in a truly authentic local experience.
+            </p>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="https://www.youtube.com/watch?v=oMDwPRpfVl8" class="video" title="Video">
+                            <img src="~/Content/img/videoimg01.jpg" alt="Image" class="img-responsive"><i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="https://www.youtube.com/watch?v=JMDq6DRNKv0" class="video" title="Video Youtube">
+                            <img src="~/Content/img/videoimg02.jpg" alt="Image" class="img-responsive"><i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="img_wrapper_gallery">
+                    <div class="img_container_gallery">
+                        <a href="https://www.youtube.com/watch?v=FSTlbrnD1f8" class="video" title="Video Vimeo">
+                            <img src="~/Content/img/videoimg03.jpg" alt="Image" class="img-responsive"><i class="icon-resize-full-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End row -->
+    </div>
+    <!-- End container -->
+</main>
+<!-- End main -->

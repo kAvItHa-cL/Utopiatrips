@@ -1,0 +1,178 @@
+﻿
+@{
+    ViewBag.Title = "Blog";
+    Layout = "~/Views/Shared/_BlogLayout.cshtml";
+}
+
+<section class="parallax-window" data-parallax="scroll" data-image-src="../Content/CustomImg/alltripbanner.jpg" data-natural-width="1200" data-natural-height="430">
+    <div class="parallax-content-1">
+        <div class="animated fadeInDown">
+            <h1>Tour Blog</h1>
+            <p>Take only memories.......Leave only footprints</p>
+        </div>
+    </div>
+</section>
+
+<main style="margin-bottom: 353px;">
+    <div id="position">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="@Url.Action("Index", "Home")">Home</a>
+                </li>
+                <li>
+                    <a href="@Url.Action("Blog", "Blog")">Blog</a>
+                </li>
+                <li>Page active</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End position -->
+
+    <div class="container margin_60">
+        <div class="row">
+
+            <div class="col-md-9">
+                <div class="box_style_1">
+                    <div class="post">
+                        <a href="blog_post_right_sidebar.html">
+                            <img src="~/Content/homeimg/anthargangebanner.png" alt="Image" class="img-responsive">
+                        </a>
+                        <div class="post_info clearfix">
+                            <div class="post-left">
+                                <ul>
+                                    <li>
+                                        <i class="icon-calendar-empty"></i>On <span>12 Nov 2017</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-inbox-alt"></i>In <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Top tours</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-tags"></i>Tags
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Trekking</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Outdoor</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Outdoor Around Banglore</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Weekend</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Night Trek</a>
+                                    </li>
+                                </ul>
+                            </div>
+                          
+                        </div>
+                        <h2>Anthargange</h2>
+                        <p>
+                            It was the end of my semester exams when my friends planned to go for an outing (Finally..:-p).
+                            We were done visiting every mall and cafes in Bangalore and this time we really wanted to go on an adventurous outing and trekking was the first thing that popped in our minds. 
+                            Before we could browse websites that conducted package tours for trekking places around Bangalore,
+                            one of my friend recommended us to go with Eutopia Trips telling how much she'd enjoyed their service! We trusted what she said and booked our trip with Eutopia and we didn't regret it at all!
+                        </p>
+                        <!--<p>
+                            Ludus albucius adversarium eam eu. Sit eu reque tation aliquip. Quo no dolorum albucius lucilius, hinc eligendi ut sed. Ex nam quot ferri suscipit, mea ne legere alterum repudiandae. Ei pri quaerendum intellegebat, ut vel consequuntur voluptatibus. Et volumus sententiae adversarium duo......
+                        </p>-->
+                        <a href="@Url.Action("AnthargangeBlog", "Blog")" class="btn_1">Read more</a>
+                    </div>
+                    <!-- end post -->
+
+                    <hr>
+
+                    <div class="post">
+                        <a href="blog_post_right_sidebar.html">
+                            <img src="~/Content/homeimg/kunti.png" alt="Image" class="img-responsive">
+                        </a>
+                        <div class="post_info clearfix">
+                            <div class="post-left">
+                                <ul>
+                                    <li>
+                                        <i class="icon-calendar-empty"></i>On <span>12 Nov 2017</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-inbox-alt"></i>In <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Top tours</a>
+                                    </li>
+                                    <li>
+                                        <i class="icon-tags"></i>Tags
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Trekking</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Outdoor</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Outdoor Around Banglore</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Weekend</a>
+                                        <a href="@Url.Action("AntharagangeTrek", "OneDayTrekking")">Night Trek</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><h2>Kunti Betta</h2>
+                              <p>
+                                  I am an IT professional, and needless to say, I spend five days of my week in a cubicle in front of my computer. The thing is, after a point of time, I found it to be monotonous and boring. I have always been an adventure lover, and I have always loved going on treks, experiencing nature at its best! They were the good old days! But then I had moved to Bangalore, a city that was strange and new to me. The pressure was building up in me. Luckily, one fine day, a colleague of mine suggested me a weekend trek that was being organized to Kuntibetta! Well, I jumped at the opportunity!
+                              </p>
+                        <a href="@Url.Action("KuntiBlog", "Blog")" class=" btn_1">Read more</a>
+                    </div>
+                    <!-- end post -->
+
+                </div>
+                <hr>
+
+                <div class="text-center">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#">Prev</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">1</a>
+                        </li>
+                        <li>
+                            <a href="blog2.html">2</a>
+                        </li>
+                        <li>
+                            <a href="blog3.html">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                        <li>
+                            <a href="blog2.html">Next</a>
+                        </li>
+                    </ul>
+                    <!-- end pagination-->
+                </div>
+            </div>
+            <!-- End col-md-8-->
+
+            <aside class="col-md-3">
+
+                <div class="widget">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" style="margin-left:0;"><i class="icon-search"></i></button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <!-- End Search -->
+                <hr>
+                <div class="widget" id="cat_blog">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li>
+                            <a href="#">Places to visit</a>
+                        </li>
+                        <li>
+                            <a href="#">Top tours</a>
+                        </li>
+                        <li>
+                            <a href="#">Tips for travellers</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End widget -->
+            </aside>
+            <!-- End aside -->
+        </div>
+        <!-- End row-->
+    </div>
+    <!-- End container -->
+</main>

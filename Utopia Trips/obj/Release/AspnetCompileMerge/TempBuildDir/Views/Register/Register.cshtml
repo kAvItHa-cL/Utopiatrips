@@ -1,0 +1,152 @@
+﻿@model Utopia_Trips.Models.RegisterModel
+
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie ie8"> <![endif]-->
+<!--[if IE 9]><html class="ie ie9"> <![endif]-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Register now with Utopia Trips to explore the best trekking destinations in and around Bangalore. Login in for an adventurous ride!">
+    <meta name="author" content="Utoipatrips">
+    <title>Register | Utopiatrips</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="~/Content/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" type="image/x-icon" href="~/Content/img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="~/Content/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="~/Content/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="~/Content/img/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- Google web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Lato:300,400|Montserrat:400,400i,700,700i" rel="stylesheet">
+    <!-- CSS -->
+    <link href="~/Content/css/base.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="~/Content/css/flickity.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body class="bg" style="background-image:url(../Content/Header/signin.jpg);">
+    <!--[if lte IE 8]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p>
+    <![endif]-->
+    <div id="preloader">
+        <div class="sk-spinner sk-spinner-wave">
+            <div class="sk-rect1"></div>
+            <div class="sk-rect2"></div>
+            <div class="sk-rect3"></div>
+            <div class="sk-rect4"></div>
+            <div class="sk-rect5"></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+       <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                        <div id="register">
+                            <div class="text-center"><img src="~/Content/img/logo.png" alt="Image" data-retina="true"></div>
+                            <hr>
+                            <form method="post" name="registerForm" >
+                                <!--<div class="row">
+                                                                    <div class="col-md-6 col-sm-6 login_social">
+                                                                        <a href="#" class="btn btn-primary btn-block"><i class="icon-facebook"></i> Facebook</a>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-sm-6 login_social">
+                                                                        <a href="#" class="btn btn-info btn-block "><i class="icon-google"></i>Google+</a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="login-or"><hr class="hr-or"><span class="span-or">or</span></div>
+                                end row -->
+
+                                <div class="form-group">
+                                    <label style="color:red;display:none;" id="invalidInput">Invalid inputs, Please try again!</label>
+                                </div>
+                                <div class="form-group">
+                                    <label style="color:red;display:none;" id="mismatch">Password mismatch, Please try again!</label>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Fullname</label>
+                                    <input type="text" class=" form-control" id="name" name="Fullname" placeholder="Fullname">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class=" form-control" id="email" name="EmailId" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class=" form-control" id="password1" name="Password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm password</label>
+                                    <input type="password" class=" form-control" id="password2" name="Password2" placeholder="Confirm password">
+                                </div>
+                                <div id="pass-info" class="clearfix"></div>
+                               @* @Html.ActionLink("Register", "Register", "Register", null, new { @class = "btn_full" })*@
+
+                                <input type="submit" class="btn_full" value="Sign Out" onclick="return validateRegister()" />
+                                @Html.ActionLink("Sign In", "Login", "Login", null, new { @class = "btn_full_outline" })
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     
+    <div id="toTop"></div><!-- Back to top button -->
+    <!-- Search Menu -->
+    <div class="search-overlay-menu">
+        <span class="search-overlay-close"><i class="icon_set_1_icon-77"></i></span>
+        <form role="search" id="searchform" method="get">
+            <input value="" name="q" type="search" placeholder="Search..." />
+            <button type="submit">
+                <i class="icon_set_1_icon-78"></i>
+            </button>
+        </form>
+    </div><!-- End Search Menu -->
+    <!-- Common scripts -->
+    <script src="~/Content/js/jquery-2.2.4.min.js"></script>
+    <script src="~/Content/js/common_scripts_min.js"></script>
+    <script src="~/Content/js/functions.js"></script>
+    <script>
+          $('form').submit(function () {
+              // Get the Login Name value and trim it
+              var name = $.trim($('#name').val());
+              var email = $.trim($('#email').val());
+              var pwd1 = $.trim($('#password1').val());
+              var pwd2 = $.trim($('#password2').val());
+
+              if (pwd1 != pwd2)
+              {
+                  $("#invalidInput").css("display", "none");
+                  $("#mismatch").css("display", "block");
+                  return false;
+              }
+
+              // Check if empty of not
+              if (name === '' || email === '' || pwd1==='') {
+                  $("#invalidInput").css("display", "block");
+                  $("#mismatch").css("display", "none");
+                  return false;
+              }
+              return true;
+          });
+    </script>
+
+</body>
+</html>
